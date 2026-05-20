@@ -9,6 +9,18 @@ process (e.g. across tests), which produced "Duplicate Operation ID"
 warnings before the factories were converted to local routers.
 """
 
-from .ollama_api import OllamaAPI
+from typing import TYPE_CHECKING, Any
 
 __all__ = ["OllamaAPI"]
+
+if TYPE_CHECKING:
+    from .ollama_api import OllamaAPI as OllamaAPI
+
+
+def __getattr__(name: str) -> Any:
+    if name == "OllamaAPI":
+        from .ollama_api import OllamaAPI
+
+        globals()[name] = OllamaAPI
+        return OllamaAPI
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

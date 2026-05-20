@@ -3,6 +3,7 @@ from typing import TYPE_CHECKING, Any
 from ._version import __version__ as __version__
 
 __all__ = [
+    "GraphRAGCapability",
     "LightRAG",
     "QueryParam",
     "RoleLLMConfig",
@@ -12,6 +13,7 @@ __all__ = [
 ]
 
 if TYPE_CHECKING:
+    from .capabilities import GraphRAGCapability as GraphRAGCapability
     from .lightrag import (
         LightRAG as LightRAG,
         QueryParam as QueryParam,
@@ -21,10 +23,22 @@ if TYPE_CHECKING:
     )
 
 
-_LAZY_EXPORTS = {"LightRAG", "QueryParam", "RoleLLMConfig", "RoleSpec", "ROLES"}
+_LAZY_EXPORTS = {
+    "GraphRAGCapability",
+    "LightRAG",
+    "QueryParam",
+    "RoleLLMConfig",
+    "RoleSpec",
+    "ROLES",
+}
 
 
 def __getattr__(name: str) -> Any:
+    if name == "GraphRAGCapability":
+        from .capabilities import GraphRAGCapability
+
+        globals()[name] = GraphRAGCapability
+        return GraphRAGCapability
     if name in _LAZY_EXPORTS:
         from .lightrag import LightRAG, QueryParam, RoleLLMConfig, RoleSpec, ROLES
 
