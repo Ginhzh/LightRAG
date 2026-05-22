@@ -1,0 +1,92 @@
+[
+  {
+    "id": "adv-round3-001",
+    "question": "奥黛丽如何从赫温·兰比斯线索推断心理炼金会对鲁恩贵族圈的渗透风险？这个判断与正神教会对重要信徒的保护机制有什么关系？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "奥黛丽",
+    "related_hints": ["赫温·兰比斯", "赫温.兰比斯", "心理炼金会", "鲁恩贵族", "正神教会"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "weak-link", "multihop", "relation-filtering", "fuzzy-relation"]
+  },
+  {
+    "id": "adv-round3-002",
+    "question": "“月亮”埃姆林在惩戒血族目标时，为什么需要让“正义”和“星星”的行动被表面报复计划掩盖？请区分代号、真实人物和行动分工。",
+    "question_type": "RelationQuery",
+    "subject_hint": "埃姆林",
+    "related_hints": ["月亮", "正义", "星星", "血族", "惩戒行动", "行动分工"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "alias-conflict", "role-alias", "relation-filtering"]
+  },
+  {
+    "id": "adv-round3-003",
+    "question": "“倒吊人”阿尔杰在塔罗会中的定位，如何因为“隐者”嘉德丽雅的加入而发生调整？请只保留海上渠道、资源能力和塔罗会分工相关证据。",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "阿尔杰",
+    "related_hints": ["倒吊人", "隐者", "嘉德丽雅", "海上渠道", "塔罗会", "资源能力"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "weak-link", "multihop", "relation-filtering", "role-alias"]
+  },
+  {
+    "id": "adv-round3-004",
+    "question": "“隐者”嘉德丽雅与“神秘女王”贝尔纳黛的关系，如何影响塔罗会成员对她资源来源和海上身份的判断？请避免只回答她是谁。",
+    "question_type": "RelationQuery",
+    "subject_hint": "嘉德丽雅",
+    "related_hints": ["隐者", "神秘女王", "贝尔纳黛", "星之上将", "五海", "资源渠道"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "alias-conflict", "fuzzy-relation", "relation-filtering"]
+  },
+  {
+    "id": "adv-round3-005",
+    "question": "伦纳德、帕列斯和阿蒙分身之间的关系，为什么会让对付阿蒙的计划必须兼顾身份暴露与情报来源？请说明帕列斯在链路中的作用。",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "伦纳德",
+    "related_hints": ["帕列斯·索罗亚斯德", "帕列斯.索罗亚斯德", "阿蒙", "时之虫", "身份暴露", "情报来源"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "weak-link", "multihop", "alias-conflict", "relation-filtering"]
+  },
+  {
+    "id": "adv-round3-006",
+    "question": "阿兹克的白骨信使、灵教团铜哨和“黑皇帝”牌并非同一类物品；它们分别通过什么关系连接到克莱恩的风险处理？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "阿兹克",
+    "related_hints": ["白骨信使", "灵教团铜哨", "黑皇帝牌", "克莱恩", "灰雾之上", "风险处理"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "fuzzy-relation", "relation-filtering", "weak-link", "artifact-role"]
+  },
+  {
+    "id": "adv-round3-007",
+    "question": "达尼兹与格尔曼·斯帕罗的关系为什么不能简单归类为同伴或敌人？请区分他与“冰山中将”和“黄金梦想号”的关系。",
+    "question_type": "RelationQuery",
+    "subject_hint": "达尼兹",
+    "related_hints": ["格尔曼·斯帕罗", "格尔曼斯帕罗", "冰山中将", "黄金梦想号", "第四水手长", "俘虏"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "alias-conflict", "relation-filtering", "fuzzy-relation"]
+  },
+  {
+    "id": "adv-round3-008",
+    "question": "班西港异常如何通过梅迪奇、“救赎蔷薇”和风暴教会线索，与后续由“倒吊人”处理的信息传递形成弱连接？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "班西港",
+    "related_hints": ["梅迪奇", "救赎蔷薇", "风暴教会", "倒吊人", "阿尔杰", "信息传递"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "weak-link", "multihop", "fuzzy-relation", "relation-filtering"]
+  },
+  {
+    "id": "adv-round3-009",
+    "question": "威尔·昂赛汀在阿蒙分身问题上提供的判断，和灰雾之上观察命运的能力之间是什么互补关系？请区分威尔的身份线索和具体建议。",
+    "question_type": "RelationQuery",
+    "subject_hint": "威尔.昂赛汀",
+    "related_hints": ["威尔·昂赛汀", "阿蒙", "命运", "灰雾之上", "纸鹤", "水银之蛇"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "alias-conflict", "weak-link", "fuzzy-relation", "relation-filtering"]
+  },
+  {
+    "id": "adv-round3-010",
+    "question": "戴里克寻求“光之祭司”晋升仪式方案时，为什么白银城的黑暗问题需要同时关联神弃之地、黑夜领域和塔罗会成员建议？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "戴里克",
+    "related_hints": ["太阳", "白银城", "光之祭司", "神弃之地", "黑夜领域", "隐者", "倒吊人"],
+    "expected_answer": null,
+    "tags": ["adversarial-suite", "weak-link", "multihop", "alias-conflict", "relation-filtering"]
+  }
+]

@@ -1,0 +1,11 @@
+[python]
+runner = "uv"
+python_args = ["run", "python"]
+
+[paths]
+repo_root = "../../../"
+default_cases = "../cases/initial_eval_cases.json"
+mcp_helper = "../python/run_mcp_tool.py"
+
+[baseline]
+modes = ["local", "global", "hybrid", "naive", "mix"]

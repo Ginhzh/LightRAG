@@ -1,0 +1,92 @@
+[
+  {
+    "id": "entity-101",
+    "question": "克莱恩是谁？",
+    "question_type": "EntityFact",
+    "subject_hint": "克莱恩",
+    "related_hints": [],
+    "expected_answer": null,
+    "tags": ["entity", "mixed-suite"]
+  },
+  {
+    "id": "entity-102",
+    "question": "格尔曼·斯帕罗和克莱恩是什么关系？",
+    "question_type": "EntityFact",
+    "subject_hint": "格尔曼·斯帕罗",
+    "related_hints": ["克莱恩"],
+    "expected_answer": null,
+    "tags": ["entity", "identity", "mixed-suite"]
+  },
+  {
+    "id": "relation-201",
+    "question": "克莱恩和塔罗会有什么关系？",
+    "question_type": "RelationQuery",
+    "subject_hint": "克莱恩",
+    "related_hints": ["塔罗会"],
+    "expected_answer": null,
+    "tags": ["relation", "mixed-suite"]
+  },
+  {
+    "id": "relation-202",
+    "question": "世界和克莱恩是什么关系？",
+    "question_type": "RelationQuery",
+    "subject_hint": "世界",
+    "related_hints": ["克莱恩"],
+    "expected_answer": null,
+    "tags": ["relation", "persona", "mixed-suite"]
+  },
+  {
+    "id": "relation-203",
+    "question": "克莱恩和伦纳德·米切尔之间是什么关系？",
+    "question_type": "RelationQuery",
+    "subject_hint": "克莱恩",
+    "related_hints": ["伦纳德·米切尔"],
+    "expected_answer": null,
+    "tags": ["relation", "character", "mixed-suite"]
+  },
+  {
+    "id": "relation-204",
+    "question": "克莱恩和贝克兰德是什么关系？",
+    "question_type": "RelationQuery",
+    "subject_hint": "克莱恩",
+    "related_hints": ["贝克兰德"],
+    "expected_answer": null,
+    "tags": ["relation", "location", "mixed-suite"]
+  },
+  {
+    "id": "multihop-301",
+    "question": "克莱恩是如何同时以愚者、世界和格尔曼·斯帕罗这些身份活动的？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "克莱恩",
+    "related_hints": ["愚者", "世界", "格尔曼·斯帕罗"],
+    "expected_answer": null,
+    "tags": ["multihop", "identity", "mixed-suite"]
+  },
+  {
+    "id": "multihop-302",
+    "question": "围绕克莱恩和塔罗会，哪些关键人物参与了互动或协作？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "克莱恩",
+    "related_hints": ["塔罗会", "关键人物", "协作"],
+    "expected_answer": null,
+    "tags": ["multihop", "group", "mixed-suite"]
+  },
+  {
+    "id": "multihop-303",
+    "question": "克莱恩在贝克兰德、灰雾之上和塔罗会之间的活动是如何串联起来的？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "克莱恩",
+    "related_hints": ["贝克兰德", "灰雾之上", "塔罗会"],
+    "expected_answer": null,
+    "tags": ["multihop", "location", "organization", "mixed-suite"]
+  },
+  {
+    "id": "explore-401",
+    "question": "围绕克莱恩，最关键的组织、身份和长期关系网络有哪些？",
+    "question_type": "OpenExploration",
+    "subject_hint": "克莱恩",
+    "related_hints": ["组织", "身份", "关系网络"],
+    "expected_answer": null,
+    "tags": ["exploration", "mixed-suite"]
+  }
+]

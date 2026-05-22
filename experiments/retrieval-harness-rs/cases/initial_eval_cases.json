@@ -1,0 +1,29 @@
+[
+  {
+    "id": "entity-001",
+    "question": "克莱恩是谁？",
+    "question_type": "EntityFact",
+    "subject_hint": "克莱恩",
+    "related_hints": [],
+    "expected_answer": null,
+    "tags": ["entity", "baseline"]
+  },
+  {
+    "id": "relation-001",
+    "question": "克莱恩和塔罗会有什么关系？",
+    "question_type": "RelationQuery",
+    "subject_hint": "克莱恩",
+    "related_hints": ["塔罗会"],
+    "expected_answer": null,
+    "tags": ["relation", "baseline"]
+  },
+  {
+    "id": "explore-001",
+    "question": "围绕克莱恩最关键的组织和人物有哪些？",
+    "question_type": "OpenExploration",
+    "subject_hint": "克莱恩",
+    "related_hints": ["组织", "人物"],
+    "expected_answer": null,
+    "tags": ["explore", "baseline"]
+  }
+]

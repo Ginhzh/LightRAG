@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retrieval Harness Strategy"
+  short_description: "Guide multi-hop harness evaluation strategy"
+  default_prompt: "Use $retrieval-harness-strategy to run or revise the LightRAG retrieval harness after real evaluation rounds."

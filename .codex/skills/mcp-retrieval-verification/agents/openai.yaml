@@ -1,0 +1,4 @@
+interface:
+  display_name: "MCP Retrieval Verification"
+  short_description: "Verify real LightRAG MCP multi-index retrieval"
+  default_prompt: "Use $mcp-retrieval-verification to verify real LightRAG MCP retrieval across entity, relationship, chunk, and context paths."

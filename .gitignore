@@ -23,6 +23,7 @@ docker-compose.*.yml
 dist/
 build/
 site/
+target/
 
 # Logs / Reports
 *.log
@@ -55,11 +56,16 @@ output/
 rag_storage/
 data/
 
-# User cumstomized prompt directory
+# Runtime-provided entity type prompt profiles (keep sample files only)
 prompts/entity_type/
 
 # Evaluation results
 lightrag/evaluation/results/
+rag_test/eval_results_*.json
+
+# Local agent/runtime state
+.omc/
+rag_test/.omc/
 
 # Miscellaneous
 .DS_Store
@@ -78,9 +84,13 @@ ignore_this.txt
 # temporary test files in project root
 /test_*
 
-# AI Agent files
+# Cline files
 memory-bank
+.claude/CLAUDE.md
 .claude/
+
+# Claude Code
+CLAUDE.md
 
 # Google Jules
 .jules/

@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "development/2026-05-20-graphrag-capability-commit.md": {
+      "ingested_at": "2026-05-20T00:45:00Z",
+      "produced_pages": [
+        "20_Wiki/concepts/GraphRAG Capability Layer.md",
+        "20_Wiki/concepts/Agent Tooling Surface.md",
+        "20_Wiki/concepts/Bounded Agent Autonomy.md",
+        "20_Wiki/concepts/MCP Adapter Goal.md",
+        "20_Wiki/maps/LightRAG GraphRAG Capability Knowledge Graph.md",
+        "30_Projects/LightRAG/LightRAG GraphRAG Capability Development.md",
+        "30_Projects/LightRAG/LightRAG Next Goals.md",
+        "20_Wiki/concepts/Retrieval Harness Strategy.md",
+        "20_Wiki/concepts/External Knowledge Base Sync.md"
+      ],
+      "status": "processed"
+    }
+  },
+  "last_full_lint": null
+}

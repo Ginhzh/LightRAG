@@ -1,0 +1,92 @@
+[
+  {
+    "id": "entity-hard-101",
+    "question": "周明瑞、克莱恩·莫雷蒂和愚者这三个称呼指向的主体是否相同？它们分别对应什么身份层级？",
+    "question_type": "EntityFact",
+    "subject_hint": "克莱恩",
+    "related_hints": ["周明瑞", "克莱恩·莫雷蒂", "愚者", "身份层级"],
+    "expected_answer": null,
+    "tags": ["entity", "identity", "alias", "hard-suite"]
+  },
+  {
+    "id": "entity-hard-102",
+    "question": "格尔曼·斯帕罗、夏洛克·莫里亚蒂和道恩·唐泰斯分别是什么身份？它们如何共同指向克莱恩的行动网络？",
+    "question_type": "EntityFact",
+    "subject_hint": "克莱恩",
+    "related_hints": ["格尔曼·斯帕罗", "夏洛克·莫里亚蒂", "道恩·唐泰斯", "行动网络"],
+    "expected_answer": null,
+    "tags": ["entity", "identity", "persona", "hard-suite"]
+  },
+  {
+    "id": "relation-hard-201",
+    "question": "如果把世界视为塔罗会成员、把愚者视为塔罗会核心，世界和愚者之间的关系如何通过克莱恩串联起来？",
+    "question_type": "RelationQuery",
+    "subject_hint": "世界",
+    "related_hints": ["愚者", "克莱恩", "塔罗会"],
+    "expected_answer": null,
+    "tags": ["relation", "identity", "organization", "hard-suite"]
+  },
+  {
+    "id": "relation-hard-202",
+    "question": "克莱恩与伦纳德·米切尔的关系如何同时受到廷根值夜者经历、帕列斯相关线索和后续身份认知的影响？",
+    "question_type": "RelationQuery",
+    "subject_hint": "克莱恩",
+    "related_hints": ["伦纳德·米切尔", "廷根", "值夜者", "帕列斯"],
+    "expected_answer": null,
+    "tags": ["relation", "character", "organization", "identity", "hard-suite"]
+  },
+  {
+    "id": "relation-hard-203",
+    "question": "克莱恩和贝克兰德的关系不只是居住地点变化，还牵涉哪些身份、组织和关键事件？",
+    "question_type": "RelationQuery",
+    "subject_hint": "克莱恩",
+    "related_hints": ["贝克兰德", "夏洛克·莫里亚蒂", "道恩·唐泰斯", "组织", "关键事件"],
+    "expected_answer": null,
+    "tags": ["relation", "location", "identity", "event", "hard-suite"]
+  },
+  {
+    "id": "multihop-hard-301",
+    "question": "从廷根的值夜者到贝克兰德的侦探，再到海上的冒险家，克莱恩的身份转换如何连接不同地点、组织和人物关系？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "克莱恩",
+    "related_hints": ["廷根", "值夜者", "贝克兰德", "夏洛克·莫里亚蒂", "格尔曼·斯帕罗"],
+    "expected_answer": null,
+    "tags": ["multihop", "identity", "location", "organization", "hard-suite"]
+  },
+  {
+    "id": "multihop-hard-302",
+    "question": "塔罗会成员如何通过愚者、世界和灰雾之上的交流机制与现实中的克莱恩行动产生间接关联？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "塔罗会",
+    "related_hints": ["愚者", "世界", "灰雾之上", "克莱恩", "现实行动"],
+    "expected_answer": null,
+    "tags": ["multihop", "organization", "identity", "mechanism", "hard-suite"]
+  },
+  {
+    "id": "multihop-hard-303",
+    "question": "阿兹克、伦纳德和塔罗会分别从哪些路径与克莱恩产生联系？这些路径在身份暴露或互助关系上有什么差异？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "克莱恩",
+    "related_hints": ["阿兹克", "伦纳德·米切尔", "塔罗会", "身份暴露", "互助关系"],
+    "expected_answer": null,
+    "tags": ["multihop", "character", "organization", "identity", "hard-suite"]
+  },
+  {
+    "id": "multihop-hard-304",
+    "question": "阿蒙与克莱恩的冲突如何跨越身份伪装、源堡或灰雾之上、以及塔罗会相关线索展开？",
+    "question_type": "MultiHopRelation",
+    "subject_hint": "阿蒙",
+    "related_hints": ["克莱恩", "身份伪装", "源堡", "灰雾之上", "塔罗会"],
+    "expected_answer": null,
+    "tags": ["multihop", "conflict", "identity", "artifact", "organization", "hard-suite"]
+  },
+  {
+    "id": "explore-hard-401",
+    "question": "围绕克莱恩，请综合梳理最容易被混淆的身份别名、真实人物关系、活动地点和组织归属，并说明它们之间的多跳连接。",
+    "question_type": "OpenExploration",
+    "subject_hint": "克莱恩",
+    "related_hints": ["身份别名", "人物关系", "活动地点", "组织归属", "多跳连接"],
+    "expected_answer": null,
+    "tags": ["exploration", "identity", "relation", "location", "organization", "hard-suite"]
+  }
+]

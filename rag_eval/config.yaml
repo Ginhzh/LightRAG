@@ -1,0 +1,15 @@
+# LightRAG RAG-vs-Graph-RAG evaluation defaults.
+# API keys are intentionally not stored here. Use LIGHTRAG_API_KEY or
+# RAG_EVAL_HEADERS_JSON='{"Authorization":"Bearer ..."}' when required.
+
+endpoint: "http://10.12.222.57:9621"
+modes: "naive,local,global,hybrid,mix"
+num_questions: 30
+output_dir: "outputs"
+concurrency: 1
+sleep: 0.5
+timeout: 120
+
+# Optional retrieval limits. Leave null to use server defaults.
+top_k:
+chunk_top_k:
